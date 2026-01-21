@@ -53,6 +53,16 @@ typedef long ssize_t;
 #define MICROPY_NLR_SETJMP                      (1)
 
 // ============================================================================
+// GC (Garbage Collection) register capture configuration
+// ============================================================================
+
+// Use setjmp-based GC register capture instead of inline assembly.
+// This avoids clang issues with explicit register variables like
+// `register long rbp asm("rbp")` which cause "Interference usage of
+// base pointer/frame pointer" errors in release builds.
+#define MICROPY_GCREGS_SETJMP                   (1)
+
+// ============================================================================
 // Debug configuration
 // ============================================================================
 
