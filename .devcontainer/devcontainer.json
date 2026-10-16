@@ -3,7 +3,7 @@
 {
   "name": "Hyperlight",
 
-  "image": "ghcr.io/hyperlight-dev/hyperlight-devcontainer:latest",
+  "image": "ghcr.io/hyperlight-dev/hyperlight-devcontainer@sha256:673e327a86f72f56efb213df65c3029575d0ec1c4a0508a82bc90953ee3bd4f0",
 
   "containerUser": "vscode",
   // Environment for the container also used by the `postCreateCommand`
